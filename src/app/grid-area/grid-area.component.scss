@@ -1,0 +1,42 @@
+:host {
+    display: grid;
+    gap: 20px;
+    grid-template: "a b c d e" auto / 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+
+    div {
+      border: 1px solid aliceblue;
+      border-radius: 10px;
+      width: 100px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      &.a {
+        background-color: chocolate;
+        grid-area: a;
+      }
+  
+      &.b {
+        background-color: cornflowerblue;
+        grid-area: b;
+      }
+  
+      &.c {
+        background-color: brown;
+        grid-area: c;
+      }
+  
+      &.d {
+        background-color: darkcyan;
+        grid-area: d;
+      }
+  
+      &.e {
+        background-color: darkslateblue;
+        grid-area: e;
+      }
+    }
+  }
+  

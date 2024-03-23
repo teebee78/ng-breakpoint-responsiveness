@@ -1,0 +1,54 @@
+:host {
+  display: grid;
+  gap: 20px;
+  grid-template-columns:
+    [a] 100px
+    [b] 100px
+    [c] 100px
+    [d] 100px
+    [e] 100px;
+
+  &.compact {
+    grid-template-columns:
+      [a] 100px
+      [b] 100px
+      [d] 100px
+      [e] 100px;
+  }
+
+  div {
+    border: 3px solid aliceblue;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+
+    &.a {
+      background-color: chocolate;
+      grid-column: a;
+    }
+
+    &.b {
+      background-color: cornflowerblue;
+      grid-column: b;
+    }
+
+    &.c {
+      background-color: brown;
+      grid-column: c;
+    }
+
+    &.d {
+      background-color: darkcyan;
+      grid-column: d;
+    }
+
+    &.e {
+      background-color: darkslateblue;
+      grid-column: e;
+    }
+  }
+}
